@@ -1,7 +1,4 @@
-# Dockerfile_metagenomic
-LICENSE
-This is a free pipeline: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
+# Metagenomic pipeline
 
 This is a dockerized solution for metagenomics. Inside a docker container, we creaated UBUNTU with python 3.7 and we installed in it also Anaconda 3 (V. 2020/02).
 Inside anaconda base environment, we installed two common metagenomics software, KAIJU (http://kaiju.binf.ku.dk/) and KRAKEN (https://ccb.jhu.edu/software/kraken/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
@@ -48,3 +45,6 @@ to see the help about this two softwares.
 In order to run a metagenomic analysis, you should download different genome reference for bacteria and virus.
 You can download them directly from 
 
+
+4 - LICENSE
+This is a free pipeline: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
