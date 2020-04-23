@@ -5,17 +5,17 @@ Inside anaconda base environment, we installed two common metagenomics software,
 
 
 
-1 - DOCKER INSTALLATION
+##1 - DOCKER INSTALLATION
 
 To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/). Here (https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the information about how to install and run docker.
 
-2 - PIPELINE INSTALLATION
+##2 - PIPELINE INSTALLATION
 
 Run DOCKER on your PC or server and download and install our pipeline pulling it from here (https://hub.docker.com/r/biohaz/metagenomic) or just type:
 ```
 docker pull biohaz/metagenomic:latest
 ```
-3.1 - BEGIN THE ANALYSIS
+##3.1 - BEGIN THE ANALYSIS
 
 Run the pipeline running our docker container
 e.g.:
@@ -40,11 +40,11 @@ or
 ```
 to see the help about this two softwares.
 
-3.2 - Download the databases
+##3.2 - Download the databases
 
 In order to run a metagenomic analysis, you should download different genome reference for bacteria and virus.
 You can download them directly from 
 
 
-4 - LICENSE
+##4 - LICENSE
 This is a free pipeline: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
