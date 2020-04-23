@@ -12,32 +12,32 @@ To use our pipeline, it is mandatory to install and run DOCKER (https://hub.dock
 2 - PIPELINE INSTALLATION
 
 Run DOCKER on your PC or server and download and install our pipeline pulling it from here (https://hub.docker.com/r/biohaz/metagenomic) or just type:
-
+```
 docker pull biohaz/metagenomic:latest
-
+```
 3.1 - BEGIN THE ANALYSIS
 
 Run the pipeline running our docker container
 e.g.:
-
+```
  docker run --rm -it biohaz/metagenomic
-
+```
 There are many options to run a docker container. Please consider to look here (https://docs.docker.com/engine/reference/commandline/run/) and explore some possible options.
 
 Inside the docker container you will be able to run the anaconda base env.
 Just type:
-
+```
  source activate
-
+```
 Now you are inside the base environment with all the softwares previously installated in it.
 Type
-
+```
  kraken --help
-
+```
 or 
-
+```
  kaiju --help
-
+```
 to see the help about this two softwares.
 
 3.2 - Download the databases
