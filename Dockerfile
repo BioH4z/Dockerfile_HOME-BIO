@@ -16,6 +16,6 @@ ENV PATH /opt/Anaconda3/bin:$PATH
 
 RUN source activate
 RUN conda update -n base -c defaults conda
-RUN conda install -c bioconda -c conda-forge fastqc multiqc trimmomatic cutadapt bowtie bowtie2 star kraken2 bracken spades kaiju krona
+RUN conda install -c bioconda -c conda-forge fastqc trimmomatic cutadapt bowtie bowtie2 star kraken2 bracken spades kaiju krona multiqc
 
-ENTRYPOINT ["python2 ./Script.py -c config.txt"]
+ENTRYPOINT ["/usr/bin/python2", "./Script.py", "-c", "config.txt"]
