@@ -14,8 +14,9 @@ RUN rm /tmp/Anaconda3-2020.02-Linux-x86_64.sh
 RUN echo "export PATH=/opt/Anaconda3/bin:$PATH" > /etc/profile
 ENV PATH /opt/Anaconda3/bin:$PATH
 
+RUN pip3 install multiqc
 RUN source activate
 RUN conda update -n base -c defaults conda
-RUN conda install -c bioconda -c conda-forge fastqc trimmomatic cutadapt bowtie bowtie2 star kraken2 bracken spades kaiju krona multiqc
+RUN conda install -c bioconda -c conda-forge fastqc trimmomatic cutadapt bowtie bowtie2 star kraken2 bracken spades kaiju krona
 
 ENTRYPOINT ["/usr/bin/python2", "./Script.py", "-c", "config.txt"]
