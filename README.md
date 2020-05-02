@@ -1,6 +1,6 @@
 # Metagenomic pipeline
 
-This is a dockerized solution for metagenomics. Inside a docker container, we creaated UBUNTU with python 3.7 and we installed in it also Anaconda 3 (V. 2020/02).
+This is a dockerized solution for metagenomics. Inside a docker container, we created UBUNTU with python 3.7 and we installed in it also Anaconda 3 (V. 2020/02).
 Inside anaconda base environment, we installed two common metagenomics software, KAIJU (http://kaiju.binf.ku.dk/) and KRAKEN (https://ccb.jhu.edu/software/kraken/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
 
 
@@ -22,6 +22,11 @@ e.g.:
 ```
  docker run --rm -it biohaz/metagenomic
 ```
+
+MODIFICARE DA QUI
+
+
+
 There are many options to run a docker container. Please consider to look here (https://docs.docker.com/engine/reference/commandline/run/) and explore some possible options.
 
 Inside the docker container you will be able to run the anaconda base env.
