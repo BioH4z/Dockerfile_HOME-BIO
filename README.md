@@ -13,7 +13,7 @@ To use our pipeline, it is mandatory to install and run DOCKER (https://hub.dock
 
 Run DOCKER on your PC or server and download and install our pipeline pulling it from here (https://hub.docker.com/r/biohaz/metagenomic) or just type:
 ```
-docker pull biohaz/metagenomic:latest
+docker pull biohaz/shome_bio:latest
 ```
 
 
@@ -21,7 +21,7 @@ docker pull biohaz/metagenomic:latest
 
 ### 3.1 Prepare the Config file
 
-To run the pipeline, just manually change the "Config.txt" file to choose the correct options for your analysis. You can find an example of Config file on this repository.
+To run the pipeline, just manually change the "Config.txt" file to choose the correct options for your analysis. You can find an example of Config file in this repository.
 
 ### 3.2 - Download the databases
 
