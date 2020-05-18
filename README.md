@@ -1,12 +1,12 @@
-# Metagenomic pipeline
+# SHOME-BIO
 
-This is a dockerized solution for metagenomics. Inside a docker container, we installed UBUNTU with python 3.7 and Anaconda 3 (V. 2020/02).
-Inside anaconda base environment, we installed two common metagenomics software, KAIJU (http://kaiju.binf.ku.dk/) and KRAKEN (https://ccb.jhu.edu/software/kraken/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
+SHOtgun MEtagenomic analysis of BIOlogical entities (SHOME-BIO) is a dockerized solution for metagenomics. Inside a docker container, we installed UBUNTU with python 3.7 and Anaconda 3 (V. 2020/02).
+Inside an anaconda base environment, we installed two common metagenomics software, KAIJU (http://kaiju.binf.ku.dk/) and KRAKEN (https://ccb.jhu.edu/software/kraken/), and other mandatory softwares for the pipeline. For the complete list, please read our paper here (link)
 
 
 ## 1 - DOCKER INSTALLATION
 
-To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/). Here (https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the information about how to install and run docker. 
+To use our pipeline, it is mandatory to install and run DOCKER (https://hub.docker.com/). Here (https://hub.docker.com/search?q=&type=edition&offering=community) you can find the correct version of DOCKER for your OS and all the infos about how to install and run docker. 
 
 
 ## 2 - PIPELINE INSTALLATION
