@@ -19,6 +19,6 @@ RUN apt-get update \
 RUN pip3 install multiqc
 RUN source activate
 RUN conda update -n base -c defaults conda
-RUN conda install -c bioconda -c conda-forge fastqc cutadapt bowtie bowtie2 star kraken2 bracken spades kaiju krona matplotlib
+RUN conda install -c bioconda -c conda-forge fastqc cutadapt bowtie bowtie2 star kraken2 bracken spades kaiju krona
 
 ENTRYPOINT ["/usr/bin/python2", "./Script.py", "-c", "config.txt"]
