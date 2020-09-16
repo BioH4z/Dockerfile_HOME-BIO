@@ -14,6 +14,7 @@ RUN rm /tmp/Anaconda3-2020.02-Linux-x86_64.sh
 RUN echo "export PATH=/opt/Anaconda3/bin:$PATH" > /etc/profile
 ENV PATH /opt/Anaconda3/bin:$PATH
 
+# Install libraries and softwares
 RUN apt-get update \
 	&& apt-get install -y python-matplotlib
 RUN pip3 install multiqc
