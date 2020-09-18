@@ -16,7 +16,10 @@ ENV PATH /opt/Anaconda3/bin:$PATH
 
 # Install libraries and softwares
 RUN apt-get update
-RUN python -m pip install matplotlib
+RUN git clone git://github.com/matplotlib/matplotlib.git
+RUN cd matplotlib
+RUN python -mpip install .
+
 RUN pip3 install multiqc
 RUN source activate
 RUN conda update -n base -c defaults conda
