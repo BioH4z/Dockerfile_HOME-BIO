@@ -21,5 +21,9 @@ RUN source activate
 RUN conda update -n base -c defaults conda
 RUN conda install -c bioconda -c conda-forge fastqc cutadapt bowtie bowtie2 star kraken2 bracken spades kaiju krona
 
-ENTRYPOINT ["/usr/bin/python3", "./Script.py", "-c", "config_file.txt"]
+#Creating user
+RUN useradd -ms /bin/bash homebio
+USER homebio
+
+ENTRYPOINT ["python", "./Script.py", "-c", "config_file.txt"]
 #END
